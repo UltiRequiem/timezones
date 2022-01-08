@@ -26,6 +26,10 @@ In Node.js you have the same API:
 import timeZone, { randomTimeZone } from "@ultirequiem/timezones";
 ```
 
+## Note
+
+Done mainly because [TImero](https://github.com/UltiRequiem/timero).
+
 ## License
 
 This project is licensed under the [MIT License](./LICENSE.md).
