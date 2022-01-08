@@ -28,7 +28,7 @@ import timeZone, { randomTimeZone } from "@ultirequiem/timezones";
 
 ## Note
 
-Done mainly because [TImero](https://github.com/UltiRequiem/timero).
+Done mainly because [Timero](https://github.com/UltiRequiem/timero).
 
 ## License
 
