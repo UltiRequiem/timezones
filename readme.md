@@ -10,7 +10,10 @@ A list with all the JavaScript possible timezone.
 ### Deno 🚀
 
 ```ts
-import { randomTimeZone, timeZones } from "./mod.ts";
+import {
+  randomTimeZone,
+  timeZones,
+} from "https://deno.land/x/timezones/mod.ts";
 
 console.log(`My timezone is ${randomTimeZone()}`);
 
