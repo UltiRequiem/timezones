@@ -1,4 +1,4 @@
-const timeZones = [
+export const timeZones = [
   "Africa/Abidjan",
   "Africa/Accra",
   "Africa/Algiers",
@@ -347,10 +347,8 @@ const timeZones = [
   "Pacific/Tongatapu",
   "Pacific/Wake",
   "Pacific/Wallis",
-];
+] as const;
 
 export function randomTimeZone() {
   return timeZones[Math.floor(Math.random() * timeZones.length)];
 }
-
-export default timeZones;
