@@ -10,7 +10,7 @@ const publisher = {
 const packageConfig = {
   name: "@ultirequiem/timezones",
   repoName: "timezones",
-  version: "1.1.0",
+  version: "1.1.1",
   description: "A list with all possible timezone",
   keywords: ["time"],
   license: "MIT",
@@ -22,7 +22,9 @@ await build({
 
   outDir: "./node",
 
-  shims: {},
+  shims: {
+    deno: true,
+  },
 
   package: {
     name: packageConfig.name,
@@ -38,9 +40,10 @@ await build({
     },
 
     repository: `github:${publisher.username}/${packageConfig.repoName}`,
+    homepage: packageConfig.homepage,
+
     bugs: {
-      url:
-        `https://github.com/${publisher.username}/${packageConfig.repoName}/issues`,
+      url: `https://github.com/${publisher.username}/${packageConfig.repoName}/issues`,
       email: publisher.email,
     },
 

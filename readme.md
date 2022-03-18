@@ -1,6 +1,6 @@
 # timezones
 
-A list with all the JavaScript possible timezone.
+A list with all the JavaScript possible timezones.
 
 > Based on
 > [this StackOverflow Question](https://stackoverflow.com/questions/38399465)
@@ -64,7 +64,7 @@ If you want to hurry me up a bit
 Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like
 my work 🚀
 
-Don't forget to start the repo ⭐
+Don't forget to start [the repo](https://github.com/UltiRequiem/timezones) ⭐
 
 ## Notes
 
