@@ -1,7 +1,7 @@
 import { build } from "https://deno.land/x/dnt/mod.ts";
 
 await build({
-  entryPoints: ["./mod.js"],
+  entryPoints: ["./mod.ts"],
   outDir: "./node",
   shims: {
     deno: false,
