@@ -1,4 +1,4 @@
-import timeZones, { randomTimeZone } from "./mod.js";
+import timeZones, { randomTimeZone } from "./mod.ts";
 
 console.log(`My timezone is ${randomTimeZone()}`);
 
