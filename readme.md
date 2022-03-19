@@ -1,5 +1,13 @@
 # timezones
 
+[![CI](https://github.com/ultirequiem/timezones/workflows/ci/badge.svg)](https://github.com/ultirequiem/timezones)
+[![codecov](https://codecov.io/gh/ultirequiem/timezones/branch/main/graph/badge.svg?token=KEKZ52NXGP)](https://codecov.io/gh/ultirequiem/timezones)
+[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/timezones/mod.ts)
+
+![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fdeno-visualizer.danopia.net%2Fshields%2Fdep-count%2Fx%2Ftimezones%2Fmod.ts)
+![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fdeno-visualizer.danopia.net%2Fshields%2Fupdates%2Fx%2Ftimezones%2Fmod.ts)
+[![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fdeno-visualizer.danopia.net%2Fshields%2Flatest-version%2Fx%2Ftimezones%2Fmod.ts)](https://doc.deno.land/https/deno.land/x/oak/mod.ts)
+
 A list with all the JavaScript possible timezones.
 
 > Based on
