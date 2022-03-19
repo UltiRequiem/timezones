@@ -1,16 +1,42 @@
-name: CI
+name: ci
 
-on: push
+on: [push, pull_request]
 
 jobs:
-  lint:
-    name: Run tests, Lint, and check format.
-    runs-on: ubuntu-latest
+  build:
+    name: tests (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+      fail-fast: true
     steps:
-      - uses: actions/checkout@v3
-      - uses: denoland/setup-deno@v1
+      - uses: actions/checkout@v2
+      - name: download deno
+        uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
-      - run: deno lint
-      - run: deno test --allow-net
-      - run: deno fmt --check
+
+      - name: Format
+        if: matrix.os == 'ubuntu-latest'
+        run: deno fmt --check
+
+      - name: Linting
+        if: matrix.os == 'ubuntu-latest'
+        run: deno lint
+
+      - name: Bundle
+        run: deno bundle mod.ts mod.bundle.js
+
+      - name: Tests
+        run: deno test --coverage=./cov
+
+      - name: Generate Coverage
+        if: matrix.os == 'ubuntu-latest'
+        run: deno coverage --unstable --lcov ./cov > cov.lcov
+
+      - name: Upload Coverage
+        if: matrix.os == 'ubuntu-latest'
+        uses: codecov/codecov-action@v1
+        with:
+          files: cov.lcov
