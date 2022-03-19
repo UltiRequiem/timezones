@@ -26,8 +26,6 @@ timeZones.forEach((timeZone) => {
 
 ### [Node.js 🐢](https://www.npmjs.com/package/@ultirequiem/timezones)
 
-You have exactly the same API
-
 ```ts
 import { randomTimeZone, timeZone } from "@ultirequiem/timezones";
 ```
@@ -48,6 +46,8 @@ Using a plain
 - [jsdelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/timezones)
 
 - [unpkg](https://unpkg.com/@ultirequiem/timezones)
+
+You have the same API on all of this platforms.
 
 ## Documentation
 
