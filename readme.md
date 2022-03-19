@@ -7,7 +7,7 @@ A list with all the JavaScript possible timezones.
 
 ## Usage
 
-### Deno 🚀
+### [Deno 🚀](https://deno.land/x/timezones)
 
 ```ts
 import {
@@ -24,11 +24,11 @@ timeZones.forEach((timeZone) => {
 });
 ```
 
-### Node.js 🐢
+### [Node.js 🐢](https://www.npmjs.com/package/@ultirequiem/timezones)
 
 You have exactly the same API
 
-```js
+```ts
 import { randomTimeZone, timeZone } from "@ultirequiem/timezones";
 ```
 
