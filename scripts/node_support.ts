@@ -8,7 +8,7 @@ const publisher = {
 } as const;
 
 const packageConfig = {
-  name: "timezones",
+  name: "@ultirequiem/timezones",
   repoName: "timezones",
   version: "1.1.1",
   description: "A list with all possible timezone",
