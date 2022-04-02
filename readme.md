@@ -4,10 +4,6 @@
 [![codecov](https://codecov.io/gh/ultirequiem/timezones/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/timezones)
 [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/timezones/mod.ts)
 
-![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fdeno-visualizer.danopia.net%2Fshields%2Fdep-count%2Fx%2Ftimezones%2Fmod.ts)
-![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fdeno-visualizer.danopia.net%2Fshields%2Fupdates%2Fx%2Ftimezones%2Fmod.ts)
-[![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fdeno-visualizer.danopia.net%2Fshields%2Flatest-version%2Fx%2Ftimezones%2Fmod.ts)](https://doc.deno.land/https/deno.land/x/timezones/mod.ts)
-
 A list with all the JavaScript possible timezones.
 
 > Based on
@@ -17,7 +13,7 @@ A list with all the JavaScript possible timezones.
 
 ### [Deno 🚀](https://deno.land/x/timezones)
 
-```ts
+```javascript
 import {
   randomTimeZone,
   timeZones,
@@ -30,32 +26,42 @@ const date = new Date();
 timeZones.forEach((timeZone) => {
   console.log(timeZone, date.toLocaleString("en-US", { timeZone }));
 });
+
+// This is a generator function, it will never end, be careful!
+for (const timeZone of randomTimeZones()) {
+  console.log(timeZone, date.toLocaleString("en-US", { timeZone }));
+}
+
+const zonesGenerator = randomTimeZones();
+
+// A safer way to use it
+for (let i = 0; i < 10; i++) {
+  const { value: timeZone } = zonesGenerator.next();
+
+  date.toLocaleString("en-US", { timeZone });
+}
 ```
 
 ### [Node.js 🐢](https://www.npmjs.com/package/@ultirequiem/timezones)
 
-```ts
-import { randomTimeZone, timeZone } from "@ultirequiem/timezones";
+```javascript
+import {
+  randomTimeZone,
+  randomTimeZones,
+  timeZones,
+} from "@ultirequiem/timezones";
 ```
 
 ### Browser
 
-Using
-[type module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-🍱
+You can use any [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) 🔥
 
-- [esm.sh](https://esm.sh/@ultirequiem/timezones)
+Eg. [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+▶ [SkyPack](https://cdn.skypack.dev/@ultirequiem/timezones) _/_
+[script tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) ▶
+[JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/timezones).
 
-- [skypack](https://cdn.skypack.dev/@ultirequiem/timezones)
-
-Using a plain
-[script tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) 👇
-
-- [jsdelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/timezones)
-
-- [unpkg](https://unpkg.com/@ultirequiem/timezones)
-
-You have the same API on all of this platforms.
+_The API is the same on all this platforms._
 
 ## Documentation
 
@@ -67,16 +73,35 @@ You have the same API on all of this platforms.
 Open an Issue, I will check it a soon as possible 👀
 
 If you want to hurry me up a bit
-[send me a tweet](https://twitter.com/intent/tweet?text=%40UltiRequiem%20) 😆
+[send me a tweet](https://twitter.com/UltiRequiem) 😆
 
 Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like
 my work 🚀
 
-Don't forget to start [the repo](https://github.com/UltiRequiem/timezones) ⭐
+Don't forget to start [the timezones](https://github.com/UltiRequiem/timezones)
+⭐
 
 ## Notes
 
 This was done mainly because [Timero](https://github.com/UltiRequiem/timero).
+
+## Authors
+
+[Eliaz Bobadilla (a.k.a UltiRequiem)](https://ultirequiem.com) - Creator and
+Maintainer 💪
+
+See also the full list of
+[contributors](https://github.com/UltiRequiem/timezones/contributors) who
+participated in this project.
+
+## Versioning
+
+We use [SemVer](http://semver.org) for versioning. For the versions available,
+see the [tags](https://github.com/UltiRequiem/timezones/tags).
+
+## Built With
+
+- [random_item](https://github.com/UltiRequiem/random_item)
 
 ## Licence
 
