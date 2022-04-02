@@ -15,5 +15,5 @@ buildPackage(
       "./mod.ts",
       { name: "timezones", path: "./timezones.ts", kind: "bin" },
     ],
-  }
+  },
 );
