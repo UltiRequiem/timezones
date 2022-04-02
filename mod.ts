@@ -370,3 +370,5 @@ export function* randomTimeZones(): Generator<typeof timeZones[number], never> {
     yield randomTimeZone();
   }
 }
+
+export type TimeZone = typeof timeZones[number];
