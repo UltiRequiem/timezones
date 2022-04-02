@@ -16,5 +16,6 @@ buildPackage(
       { name: "timezones", path: "./timezones.ts", kind: "bin" },
     ],
     supportCJS: false,
+    check: false,
   },
 );
