@@ -96,6 +96,8 @@ It includes `list`, `random` and a fuzzy search command!
 
 [A binary for multiple platforms is provided too!](https://github.com/UltiRequiem/timezones/releases/latest)
 
+[Video Showcase](https://youtu.be/8dUX5sPlAX4)
+
 ## Support
 
 Open an Issue, I will check it a soon as possible 👀
