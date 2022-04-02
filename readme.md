@@ -1,6 +1,5 @@
 # timezones
 
-[![CI](https://github.com/ultirequiem/timezones/workflows/ci/badge.svg)](https://github.com/ultirequiem/timezones)
 [![codecov](https://codecov.io/gh/ultirequiem/timezones/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/timezones)
 [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/timezones/mod.ts)
 
