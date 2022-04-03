@@ -8,7 +8,7 @@ buildPackage(
     homepage: "https://timezones.js.org",
     keywords: ["timezones", "time", "date"],
     license: "MIT",
-    version: "1.2.0",
+    version: "1.2.1",
   },
   {
     entryPoints: [
@@ -17,5 +17,6 @@ buildPackage(
     ],
     supportCJS: false,
     check: false,
-  },
+    shims: { deno: true, prompts: true },
+  }
 );
