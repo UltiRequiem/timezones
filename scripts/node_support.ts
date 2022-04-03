@@ -17,6 +17,6 @@ buildPackage(
     ],
     supportCJS: false,
     check: false,
-    shims: { deno: true, prompts: true },
+    shims: { deno: "dev", prompts: true },
   },
 );
