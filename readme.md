@@ -15,6 +15,7 @@ A list with all the JavaScript possible timezones.
 ```javascript
 import {
   randomTimeZone,
+  randomTimeZones,
   timeZones,
 } from "https://deno.land/x/timezones/mod.ts";
 
