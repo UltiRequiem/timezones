@@ -10,7 +10,7 @@ A list with all the JavaScript possible timezones.
 
 ## Usage
 
-### [Deno 🚀](https://deno.land/x/timezones)
+### [Deno 🦕](https://deno.land/x/timezones)
 
 ```javascript
 import {
@@ -52,7 +52,7 @@ import {
 } from "@ultirequiem/timezones";
 ```
 
-### Browser
+### [Browser 🌐](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
 
 You can use any [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) 🔥
 
