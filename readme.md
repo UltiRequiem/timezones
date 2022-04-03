@@ -34,7 +34,7 @@ for (const timeZone of randomTimeZones()) {
 
 const zonesGenerator = randomTimeZones();
 
-// A safer way to use it
+// Another way
 for (let i = 0; i < 10; i++) {
   const { value: timeZone } = zonesGenerator.next();
 
