@@ -84,7 +84,7 @@ deno install https://deno.land/x/timezones/timezones.ts
 - **Node.js 🐼**
 
 ```sh
-npm install -g timezones
+npm install -g @ultirequiem/timezones
 ```
 
 ### Usage
