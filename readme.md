@@ -42,7 +42,7 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-### [Node.js 🐢](https://www.npmjs.com/package/@ultirequiem/timezones)
+### [Node.js 🦖](https://www.npmjs.com/package/@ultirequiem/timezones)
 
 ```javascript
 import {
