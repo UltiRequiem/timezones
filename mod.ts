@@ -1,4 +1,4 @@
-import { randomItem } from "https://deno.land/x/random_item@1.1.1/mod.ts";
+import { randomItem } from "https://deno.land/x/random_item@v1.2.0/mod.ts";
 
 export const timeZones = [
   "Africa/Abidjan",
