@@ -1,19 +1,9 @@
-import { randomTimeZone, randomTimeZones, timeZones } from "./mod.ts";
+import { randomTimeZone, timeZones } from "./mod.ts";
 
-console.log(`My timezone is ${randomTimeZone()}`);
+console.log(`My timezone is ${randomTimeZone()}.`);
 
 const date = new Date();
 
-timeZones.forEach((timeZone) => {
-  console.log(timeZone, date.toLocaleString("en-US", { timeZone }));
-});
-
-const zonesGenerator = randomTimeZones();
-
-for (let i = 0; i < 10; i++) {
-  console.log(zonesGenerator.next().value);
-}
-
-for (const timeZone of randomTimeZones()) {
+for (const timeZone of timeZones) {
   console.log(timeZone, date.toLocaleString("en-US", { timeZone }));
 }

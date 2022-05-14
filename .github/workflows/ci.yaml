@@ -19,6 +19,10 @@ jobs:
         with:
           deno-version: v1.x
 
+      - name: Setup Node
+        if: matrix.os == 'ubuntu-latest'
+        uses: actions/setup-node@v3
+
       - name: Check Code Format
         if: matrix.os == 'ubuntu-latest'
         run: deno fmt --check
@@ -27,8 +31,8 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: deno lint
 
-      - name: Bundle
-        run: deno bundle mod.ts mod.bundle.js
+      - name: Check
+        run: deno check mod.ts
 
       - name: Tests
         run: deno test --coverage=./cov
@@ -42,3 +46,7 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           files: cov.lcov
+
+      - name: Node Test
+        if: matrix.os == 'ubuntu-latest'
+        run: deno run -A scripts/node.ts
