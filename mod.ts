@@ -1,5 +1,7 @@
 import { randomItem } from "https://deno.land/x/random_item@v1.2.0/mod.ts";
 
+import { ItemOf } from "https://deno.land/x/ultirequiem@0.0.13/types.ts";
+
 export const timeZones = [
   "Africa/Abidjan",
   "Africa/Accra",
@@ -360,15 +362,4 @@ export function randomTimeZone() {
   return randomItem(timeZones);
 }
 
-/**
- * Eternals yields a random timezone from the list of timezones.
- *
- * @link https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
- */
-export function* randomTimeZones(): Generator<typeof timeZones[number], never> {
-  while (true) {
-    yield randomTimeZone();
-  }
-}
-
-export type TimeZone = typeof timeZones[number];
+export type TimeZone = ItemOf<typeof timeZones>;

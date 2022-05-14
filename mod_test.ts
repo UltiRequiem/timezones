@@ -1,4 +1,4 @@
-import { randomTimeZone, randomTimeZones, timeZones } from "./mod.ts";
+import { randomTimeZone, timeZones } from "./mod.ts";
 import { assertEquals } from "https://deno.land/std@0.137.0/testing/asserts.ts";
 
 const date = new Date();
@@ -19,16 +19,4 @@ Deno.test("A random time zone is valid.", () => {
   assertEquals(typeof timeZone, "string");
 
   date.toLocaleString("en-US", { timeZone });
-});
-
-Deno.test("A random time zone by the generator is valid.", () => {
-  const zonesGenerator = randomTimeZones();
-
-  for (let i = 0; i < 10; i++) {
-    const { value: timeZone } = zonesGenerator.next();
-
-    assertEquals(typeof timeZone, "string");
-
-    date.toLocaleString("en-US", { timeZone });
-  }
 });

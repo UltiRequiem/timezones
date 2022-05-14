@@ -20,22 +20,19 @@ import {
   timeZones,
 } from "https://deno.land/x/timezones/mod.ts";
 
-console.log(`My timezone is ${randomTimeZone()}`);
+console.log(`My timezone is ${randomTimeZone()}.`);
 
 const date = new Date();
 
-timeZones.forEach((timeZone) => {
+for (const timeZone of timeZones) {
   console.log(timeZone, date.toLocaleString("en-US", { timeZone }));
-});
+}
 ```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/timezones)
 
 ```javascript
-import {
-  randomTimeZone,
-  timeZones,
-} from "@ultirequiem/timezones";
+import { randomTimeZone, timeZones } from "@ultirequiem/timezones";
 ```
 
 ### [Browser 🌐](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
