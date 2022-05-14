@@ -17,7 +17,6 @@ The API is the same on all this platforms ✔️
 ```javascript
 import {
   randomTimeZone,
-  randomTimeZones,
   timeZones,
 } from "https://deno.land/x/timezones/mod.ts";
 
@@ -28,20 +27,6 @@ const date = new Date();
 timeZones.forEach((timeZone) => {
   console.log(timeZone, date.toLocaleString("en-US", { timeZone }));
 });
-
-// This is a generator function, it will never end, be careful!
-for (const timeZone of randomTimeZones()) {
-  console.log(timeZone, date.toLocaleString("en-US", { timeZone }));
-}
-
-const zonesGenerator = randomTimeZones();
-
-// Another way
-for (let i = 0; i < 10; i++) {
-  const { value: timeZone } = zonesGenerator.next();
-
-  date.toLocaleString("en-US", { timeZone });
-}
 ```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/timezones)
@@ -49,7 +34,6 @@ for (let i = 0; i < 10; i++) {
 ```javascript
 import {
   randomTimeZone,
-  randomTimeZones,
   timeZones,
 } from "@ultirequiem/timezones";
 ```
