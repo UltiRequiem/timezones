@@ -4,7 +4,7 @@ import {
   bgBlue,
   bgGreen,
   black,
-} from "https://deno.land/std@0.139.0/fmt/colors.ts";
+} from "https://deno.land/std@0.141.0/fmt/colors.ts";
 
 import { randomTimeZone, type TimeZone, timeZones } from "./mod.ts";
 
