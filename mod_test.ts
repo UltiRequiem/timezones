@@ -1,5 +1,5 @@
 import { randomTimeZone, timeZones } from "./mod.ts";
-import { assertEquals } from "https://deno.land/std@0.166.0/testing/asserts.ts";
+import { assertEquals } from "https://deno.land/std@0.175.0/testing/asserts.ts";
 
 const date = new Date();
 
