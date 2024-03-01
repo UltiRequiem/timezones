@@ -1,10 +1,10 @@
-import Fuse from "https://esm.sh/fuse.js@6.6.2/";
-import { Command } from "https://deno.land/x/cliffy@v0.25.7/command/mod.ts";
+import Fuse from "https://esm.sh/fuse.js@7.0.0/";
+import { Command } from "https://deno.land/x/cliffy@v1.0.0-rc.3/command/mod.ts";
 import {
   bgBlue,
   bgGreen,
   black,
-} from "https://deno.land/std@0.175.0/fmt/colors.ts";
+} from "https://deno.land/std@0.218.0/fmt/colors.ts";
 
 import { randomTimeZone, type TimeZone, timeZones } from "./mod.ts";
 
