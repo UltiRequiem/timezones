@@ -1,6 +1,6 @@
 # timezones
 
-A list with all the JavaScript possible timezones.
+Every JavaScript time zone, plus a random one.
 
 [![npm](https://img.shields.io/npm/v/@ultirequiem/timezones?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/timezones)
 [![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/timezones?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/timezones)
