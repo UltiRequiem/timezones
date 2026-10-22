@@ -1,0 +1,51 @@
+{
+  "name": "@ultirequiem/timezones",
+  "version": "0.0.0-development",
+  "description": "All possible timezones and utils around it.",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    }
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "timezones",
+    "time",
+    "date"
+  ],
+  "license": "MIT",
+  "homepage": "https://timezones.js.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UltiRequiem/timezones.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint 'src/**/*.ts' && prettier --check 'src/**/*.ts'",
+    "fmt": "prettier --write 'src/**/*.ts'",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "eslint": "^10.13.0",
+    "eslint-plugin-tsdoc": "^0.5.4",
+    "eslint-plugin-unicorn": "^78.0.0",
+    "prettier": "^3.9.10",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.0",
+    "vitest": "^5.0.5"
+  },
+  "dependencies": {
+    "@ultirequiem/random-item": "^1.2.0"
+  },
+  "packageManager": "pnpm@12.6.0"
+}

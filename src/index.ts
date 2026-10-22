@@ -1,6 +1,4 @@
-import { randomItem } from "https://deno.land/x/random_item@v1.2.0/mod.ts";
-
-import { ItemOf } from "https://deno.land/x/ultirequiem@0.0.17/types.ts";
+import { randomItem } from "@ultirequiem/random-item";
 
 export const timeZones = [
   "Africa/Abidjan",
@@ -362,4 +360,4 @@ export function randomTimeZone() {
   return randomItem(timeZones);
 }
 
-export type TimeZone = ItemOf<typeof timeZones>;
+export type TimeZone = (typeof timeZones)[number];
