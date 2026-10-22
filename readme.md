@@ -1,8 +1,11 @@
 # timezones
 
-[![codecov](https://codecov.io/gh/ultirequiem/timezones/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/timezones)
-
 A list with all the JavaScript possible timezones.
+
+[![npm](https://img.shields.io/npm/v/@ultirequiem/timezones?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/timezones)
+[![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/timezones?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/timezones)
+[![CI](https://github.com/UltiRequiem/timezones/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/timezones/actions/workflows/ci.yaml)
+[![codecov](https://codecov.io/gh/UltiRequiem/timezones/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/timezones)
 
 > Based on
 > [this StackOverflow Question](https://stackoverflow.com/questions/38399465)
@@ -33,12 +36,12 @@ the [CLI Tool](./timezones.ts).
 
 ## Support
 
-Open an Issue, I will check it a soon as possible 👀
+Open an Issue, I will check it as soon as possible 👀
 
 If you want to hurry me up a bit
 [send me a tweet](https://twitter.com/UltiRequiem) 😆
 
-Don't forget to start the repo ⭐
+Don't forget to star the repo ⭐
 
 ## Notes
 
