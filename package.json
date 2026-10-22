@@ -1,7 +1,7 @@
 {
   "name": "@ultirequiem/timezones",
   "version": "0.0.0-development",
-  "description": "All possible timezones and utils around it.",
+  "description": "Every JavaScript time zone, plus a random one.",
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -20,7 +20,9 @@
   "keywords": [
     "timezones",
     "time",
-    "date"
+    "date",
+    "esm",
+    "typescript"
   ],
   "license": "MIT",
   "homepage": "https://timezones.js.org",
@@ -32,10 +34,12 @@
     "build": "tsc",
     "lint": "eslint 'src/**/*.ts' && prettier --check 'src/**/*.ts'",
     "fmt": "prettier --write 'src/**/*.ts'",
-    "test": "vitest run"
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
+    "@vitest/coverage-v8": "^5.0.5",
     "eslint": "^10.13.0",
     "eslint-plugin-tsdoc": "^0.5.4",
     "eslint-plugin-unicorn": "^78.0.0",
