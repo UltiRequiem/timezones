@@ -167,8 +167,8 @@ importers:
   .:
     dependencies:
       '@ultirequiem/random-item':
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^2.0.1
+        version: 2.0.1
     devDependencies:
       '@types/node':
         specifier: ^26.6.5
@@ -232,6 +232,9 @@ packages:
 
   '@deno/shim-deno@0.4.3':
     resolution: {integrity: sha512-m5iXsq3Nvv1aJ1xwUQGnXXOztZ5UUF9dZje3l6EbX41zE5+MioK1NN+2+C3nlWWs9PvSFam4EbZVG3JUbLCeDg==}
+
+  '@deno/shim-prompts@0.1.1':
+    resolution: {integrity: sha512-E3tqmVdIhrFvyxUTDUA0lta2VHsDBH6JX48XMpveBoTtO+Js2cwfrYId7QhCkA7+9DEc96Eof7nWLiKwxxYmFA==}
 
   '@eslint-community/eslint-utils@4.10.1':
     resolution: {integrity: sha512-cuadcxVFE8sDK6iWJbs8Sn0av2Nrh2QSGQhVlBW9AaAHqHwjWsZHT8LJ4hFGPh7ASBV2deFdM7H/DPjulmh8rg==}
@@ -534,9 +537,16 @@ packages:
     resolution: {integrity: sha512-E2mroviasaWecDzTGiGMtuEguuLVOeRggnrIn93CJuxYJzQBHbyymlT08aVQydbBal5538o+JkBKXh2sRuCyIA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@ultirequiem/random-item@1.2.0':
-    resolution: {integrity: sha512-5JIJELzg0PeMcCtEzgXZyIj93/M0uj2XhxYWQCFM3beJBJd+1se+n5Y4YzjpU2oOlfjMuNgTCL26fCIfq5jECQ==}
+  '@ultirequiem/random-item@2.0.1':
+    resolution: {integrity: sha512-VxK8KDAhQasXzWA3BnPA1AR6G8LdQ2F/th39hOaRu9Smty1bIuz5B4KPqB86/rYYgIWGilmHZAxjBG6hrocOug==}
+    engines: {node: '>=20'}
+
+  '@ultirequiem/random-number@2.0.0':
+    resolution: {integrity: sha512-xIL+20lKMzvzcwwUZm6H5cEpyYTZgGLBUT47rff+68DsC2I3063Afk0amPZTHjK7U8LkgHh/SiPYHsX61uqVqg==}
     hasBin: true
+
+  '@ultirequiem/stable-fn@1.0.2':
+    resolution: {integrity: sha512-yF6TejbgMutlL1FczJo2VrE79N5nuSdyT384zdutf76IeNMAXE0tfQzhONe1fFRnvnq+qZSNYlYB+b6SvH8tNw==}
 
   '@vitest/coverage-v8@5.0.5':
     resolution: {integrity: sha512-4KpkGdIrSqBihx/JyP/e+S+IKB98etg1XDQiLAxksLfcShnwi1VReGeOT9NI43hLHbknosKp/1CCLn9Zgcs8mg==}
@@ -1373,6 +1383,8 @@ snapshots:
       '@deno/shim-deno-test': 0.3.3
       which: 2.0.2
 
+  '@deno/shim-prompts@0.1.1': {}
+
   '@eslint-community/eslint-utils@4.10.1(eslint@10.13.0)':
     dependencies:
       eslint: 10.13.0
@@ -1664,9 +1676,17 @@ snapshots:
       '@typescript-eslint/types': 8.72.0
       eslint-visitor-keys: 5.0.1
 
-  '@ultirequiem/random-item@1.2.0':
+  '@ultirequiem/random-item@2.0.1':
+    dependencies:
+      '@ultirequiem/random-number': 2.0.0
+      '@ultirequiem/stable-fn': 1.0.2
+
+  '@ultirequiem/random-number@2.0.0':
     dependencies:
       '@deno/shim-deno': 0.4.3
+      '@deno/shim-prompts': 0.1.1
+
+  '@ultirequiem/stable-fn@1.0.2': {}
 
   '@vitest/coverage-v8@5.0.5(vitest@5.0.5)':
     dependencies:
