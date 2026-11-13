@@ -168,7 +168,7 @@ importers:
     dependencies:
       '@ultirequiem/random-item':
         specifier: ^2.0.1
-        version: 2.0.3
+        version: 2.0.4
     devDependencies:
       '@types/node':
         specifier: ^26.6.5
@@ -528,8 +528,8 @@ packages:
     resolution: {integrity: sha512-NAGrjn0Pitjqzq/GkgMC4kBYm233PQ8GffyQ9+kTA3AlNQYEzOf25EIM02BAHZv5FRJSpHpJk+OGUxVkOB93GQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@ultirequiem/random-item@2.0.3':
-    resolution: {integrity: sha512-wiq3jHooxq5W4xd+U0BdYSlZuRssa+C7nIlN1evl+SyANxzYMhVZJhW5iRfe8UZFiijZVz3YOhhO4HJI/fIBVw==}
+  '@ultirequiem/random-item@2.0.4':
+    resolution: {integrity: sha512-SlXtRdxJ7UK8poopEiHx4NTQc8A+nfdY+wQlmtjI0hAoq6T8cd30xJtgV71/X1wdYtigD4O2P/8O1tE3TmWD7A==}
     engines: {node: '>=20'}
 
   '@ultirequiem/random-number@3.0.2':
@@ -1662,7 +1662,7 @@ snapshots:
       '@typescript-eslint/types': 8.72.2
       eslint-visitor-keys: 5.0.1
 
-  '@ultirequiem/random-item@2.0.3':
+  '@ultirequiem/random-item@2.0.4':
     dependencies:
       '@ultirequiem/random-number': 3.0.2
       '@ultirequiem/stable-fn': 2.0.3
